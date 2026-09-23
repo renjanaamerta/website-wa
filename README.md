@@ -1,2 +1,2 @@
-# website-wa
+# wa
 for price list
