@@ -1,2 +1,2 @@
 # website-wa
-for price lis
+for price list
