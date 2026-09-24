@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -11,7 +12,8 @@
       box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       min-height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -37,11 +39,13 @@
       content: "";
       position: fixed;
       inset: 0;
+
       background: linear-gradient(
         180deg,
         rgba(3, 7, 13, 0.35),
         rgba(3, 7, 13, 0.75)
       );
+
       z-index: 0;
     }
 
@@ -55,16 +59,16 @@
 
       text-align: center;
 
-      border: 1px solid rgba(255,255,255,0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 28px;
 
-      background: rgba(8,14,23,0.62);
+      background: rgba(8, 14, 23, 0.62);
 
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
 
       box-shadow:
-        0 25px 70px rgba(0,0,0,0.45);
+        0 25px 70px rgba(0, 0, 0, 0.45);
     }
 
     .logo {
@@ -79,10 +83,10 @@
 
       margin: 0 auto 20px;
 
-      border: 2px solid rgba(255,255,255,0.8);
+      border: 2px solid rgba(255, 255, 255, 0.8);
 
       box-shadow:
-        0 8px 30px rgba(0,0,0,0.4);
+        0 8px 30px rgba(0, 0, 0, 0.4);
 
       background: white;
     }
@@ -143,7 +147,7 @@
       font-size: 16px;
 
       box-shadow:
-        0 10px 28px rgba(32,184,88,0.25);
+        0 10px 28px rgba(32, 184, 88, 0.25);
 
       transition: 0.2s ease;
     }
@@ -173,7 +177,6 @@
     }
 
     @media (max-width: 480px) {
-
       body {
         padding: 16px;
       }
@@ -238,5 +241,24 @@
 
   </main>
 
-</body>
-</html>
+  <!--
+    Memuat konfigurasi Renjana Amerta.
+    File config.js harus berada di folder yang sama
+    dengan index.html.
+  -->
+  <script src="config.js"></script>
+
+  <!-- Supabase JavaScript Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Koneksi Supabase -->
+  <script>
+    (function () {
+      if (!window.RENJANA_CONFIG) {
+        console.error("RENJANA_CONFIG tidak ditemukan.");
+        return;
+      }
+
+      if (!window.supabase) {
+        console.error("Library Supabase
+```
